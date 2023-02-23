@@ -1,0 +1,132 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+.img-responsive
+{
+    width: 100%;
+}
+
+.txt-right
+{
+    text-align: right;
+}
+
+.txt-center
+{
+    text-align: center;
+}
+
+.clearfix
+{
+    clear: both;
+    float: none;
+}
+
+/*css for header*/
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:lightsteelblue;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar
+{
+    padding: 2%;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+/*css for login*/
+.container{
+	width: 550px;
+	height: 390px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: lightseagreen;
+	margin-top: 160px;
+}
+
+
+.container img{
+	width: 150px;
+	height: 160px;
+    padding: 3%;
+}
+
+input[type="text"],input[type="password"]{
+	margin-top: 20px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 8px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+
+
+
+.btn-login{
+    margin: 10px;
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+
+.btn-login:hover{
+    color: darkorange;
+}

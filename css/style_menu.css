@@ -1,0 +1,282 @@
+/* 
+Theme : Restaurant (Happy Treats)
+version :1.0 
+*/
+
+/* CSS for all */
+
+:root
+{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;/*to put the image in bos border*/
+    text-transform: capitalize;
+    /* text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;*/
+}
+
+html{
+    font-size: 62.5%;
+    /*overflow -x is used to click the content and no scrooling mechanism 
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    */
+}
+
+section{
+    padding:2rem 9%;
+}
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container
+{
+   /*border: 1px solid black ;*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:lightsteelblue;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar
+{
+    padding: 2%;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.sub-heading
+{
+    text-align: center;
+    color: var(--green);
+    font-size:xx-large;
+    padding: 15%;
+}
+
+.heading
+{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    margin-top: -15%;
+    padding: 3%;
+    text-transform: uppercase;
+}
+
+.img-responsive
+{
+    width: 100%;
+}
+
+.txt-right
+{
+    text-align: right;
+}
+
+.txt-center
+{
+    text-align: center;
+}
+
+.clearfix
+{
+    clear: both;
+    float: none;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: orange;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+/* CSS for Navbar starts from here */
+
+
+.menu .box-container{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.menu .box-container .box .image{
+    height: 25rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.menu .box-container .box .content .pice{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 2.5rem;
+}
+
+.new-course
+{
+    font-style: italic;
+    color: black;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.Desert
+{
+    font-style: italic;
+    color: black;
+    padding: 2%;
+    font-size:xx-large;
+    text-align: center;
+}
+
+.Meal
+{
+    font-style: italic;
+    color: black;
+    padding: 2%;
+    font-size:xx-large;
+    text-align: center;
+}
+
+/*CSS for social margin: 50px 10px;*/
+
+/*
+.Social
+{
+    margin-block: 22ch;/*15*/
+
+*/
+
+.Social ul
+{
+    list-style-type: none;
+}
+
+.Social ul li
+{
+    display: inline;
+    padding: 1%;
+}
+
+/* CSS for FOOTER */
+
+.footer
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: -5%;
+    color: black;
+}
+@media screen and (max-width: 1140px){
+    section{
+        padding:0;
+    }
+    .menu{
+        padding: 0;
+    }
+}

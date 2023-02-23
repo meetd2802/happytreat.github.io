@@ -1,0 +1,141 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.container
+{
+   /*border: 1px solid black ;*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.img-responsive
+{
+    width: 100%;
+}
+
+.txt-right
+{
+    text-align: right;
+}
+
+.txt-center
+{
+    text-align: center;
+}
+
+.clearfix
+{
+    clear: both;
+    float: none;
+}
+
+.img-responsive
+{
+    width: 100%;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background:lightsteelblue;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar
+{
+    padding: 2%;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+/*CSS for social margin: 50px 10px;*/
+
+social .so-container
+{
+    padding: -1%;
+}
+.Social
+{
+    margin: 50px 10px;
+    padding: auto;
+}
+
+.Social ul
+{
+    margin-top: -14%;
+    list-style-type: none;
+}
+
+.Social ul li
+{
+    display: inline;
+    padding: 1%;
+}
+
+
+/* CSS for FOOTER */
+
+.footer
+{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: -5%;
+    color: black;
+}
